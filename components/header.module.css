@@ -1,0 +1,123 @@
+.container {
+  position: fixed;
+  width: 100%;
+  padding-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  padding: 1.2rem 1.5rem;
+  width: 80%;
+  border-radius: 5px;
+  font-family: var(--font-roboto);
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 5px;
+  border: 1px solid rgba(209, 213, 219, 0.3);
+}
+
+.options {
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 5px;
+  border: 1px solid rgba(209, 213, 219, 0.3);
+}
+
+[data-theme="dark"] .header,
+[data-theme="dark"] .options {
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(24, 33, 51, 0.6);
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.right,
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.rightMenu,
+.options {
+  display: none;
+}
+
+.left > h2 {
+  margin-right: 0.5rem;
+}
+
+.left svg,
+.left svg > circle {
+  color: var(--text-primary);
+  fill: var(--text-primary);
+}
+
+.right > a {
+  margin-left: 3rem;
+}
+
+.right > a > h3:hover {
+  color: var(--text-secondary);
+  text-decoration: underline;
+}
+
+.inactive {
+  color: var(--text-primary);
+}
+
+.active {
+  color: var(--text-secondary);
+}
+
+@media only screen and (max-width: 767px) {
+  .container {
+    padding-top: 0;
+  }
+
+  .header {
+    width: 100%;
+    border-radius: 0 !important;
+  }
+
+  .left svg{
+    width: 18px;
+    height: 18px;
+  }
+
+  .right {
+    display: none;
+  }
+
+  .rightMenu {
+    display: block;
+  }
+
+  .rightMenu svg {
+    fill: var(--text-primary);
+    size: 12px;
+  }
+
+  .options {
+    position: absolute;
+    top: 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+  }
+
+  .options h3 {
+    padding: 15px;
+  }
+}

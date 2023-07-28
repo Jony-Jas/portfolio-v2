@@ -1,0 +1,11 @@
+.container {
+  padding: 0.9rem 0.9rem;
+  background-color: var(--orange-color);
+  border: none;
+  border-radius: 5px;
+  margin-left: 3rem;
+}
+
+.container a {
+  color: var(--white-color);
+}

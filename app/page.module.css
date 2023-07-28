@@ -1,8 +1,5 @@
-.text {
-  font-family: var(--font-roboto);
-}
-
-.main {
-  font-family: var(--font-gumela);
-  font-style: italic;
+.container{
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
 }

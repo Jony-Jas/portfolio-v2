@@ -3,8 +3,8 @@ import { roboto, gumela } from "@/utils/fonts";
 import type { Metadata } from "next";
 
 import Providers from "@/components/Providers";
-import ThemeSwitcher from "@/components/ThemeSwitcher";
 import SplashScreen from "@/components/SplashScreen";
+import Header from "@/components/Header";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -20,8 +20,8 @@ export default function RootLayout({
     <html lang="en" className={`${roboto.variable} ${gumela.variable}`}>
       <body>
         <Providers>
-          <SplashScreen />
-          <ThemeSwitcher />
+          {/* <SplashScreen /> */}
+          <Header />
           {children}
         </Providers>
       </body>

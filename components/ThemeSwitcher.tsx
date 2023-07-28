@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
+import { DarkModeSwitch } from "react-toggle-dark-mode";
 
 function ThemeSwitcher() {
   const [mounted, setMounted] = useState(false);
@@ -15,11 +16,14 @@ function ThemeSwitcher() {
   }
 
   return (
-    <div>
-      The current theme is: {theme}
-      <button onClick={() => setTheme("light")}>Light Mode</button>
-      <button onClick={() => setTheme("dark")}>Dark Mode</button>
-    </div>
+    <>
+      {/* <button onClick={() => setTheme("light")}>Light Mo</button>
+      <button onClick={() => setTheme("dark")}>Dark Mode</button> */}
+      <DarkModeSwitch
+        checked={theme === "dark"}
+        onChange={() => setTheme(theme === "dark" ? "light" : "dark")}
+      />
+    </>
   );
 }
 

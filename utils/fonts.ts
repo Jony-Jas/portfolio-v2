@@ -2,7 +2,7 @@ import { Roboto } from "next/font/google";
 import localFont from "next/font/local";
 
 export const roboto = Roboto({
-  weight: "500",
+  weight: "400",
   subsets: ["latin"],
   display: "swap",
   variable: "--font-roboto",
