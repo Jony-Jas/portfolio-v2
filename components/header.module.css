@@ -69,7 +69,10 @@
 
 .right > a > h3:hover {
   color: var(--text-secondary);
-  text-decoration: underline;
+}
+
+.right > a > hr {
+  color: var(--text-secondary);
 }
 
 .inactive {
@@ -121,6 +124,5 @@
   .options h3 {
     padding: 15px;
     font-size: 1rem;
-
   }
 }
