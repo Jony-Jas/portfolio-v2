@@ -20,7 +20,6 @@ export default function RootLayout({
     <html lang="en" className={`${roboto.variable} ${gumela.variable}`}>
       <body>
         <Providers>
-          {/* <SplashScreen /> */}
           <Header />
           {children}
         </Providers>

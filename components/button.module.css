@@ -4,6 +4,7 @@
   border: none;
   border-radius: 5px;
   margin-left: 3rem;
+  font-family: var(--font-roboto);
 }
 
 .container a {

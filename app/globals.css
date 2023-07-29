@@ -21,12 +21,12 @@
   }
 }
 
-@media only screen and (max-width: 767px) {
+/* @media only screen and (max-width: 767px) {
   :root {
-    font-size: 12px;
+    font-size: 14px;
   }
 
-}
+} */
 
 [data-theme="dark"] body {
   --white-color: #fcf9f9;

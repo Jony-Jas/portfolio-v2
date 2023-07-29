@@ -5,6 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: var(--font-roboto);
 }
 
 .header {
@@ -89,7 +90,7 @@
     border-radius: 0 !important;
   }
 
-  .left svg{
+  .left svg {
     width: 18px;
     height: 18px;
   }
@@ -104,7 +105,8 @@
 
   .rightMenu svg {
     fill: var(--text-primary);
-    size: 12px;
+    width: 25px;
+    height: 25px;
   }
 
   .options {
@@ -118,5 +120,7 @@
 
   .options h3 {
     padding: 15px;
+    font-size: 1rem;
+
   }
 }

@@ -12,62 +12,74 @@ import Button from "./Button";
 function Header() {
   const [active, setActive] = useState(0);
   const [menuActive, setMenuActive] = useState(false);
+  const [transitionActive, setTransitionActive] = useState(true);
+
+  const setMenuStateActive = (state:boolean)=>{
+    setTransitionActive(false);
+    setTimeout(()=>{
+      setMenuActive(state);
+      setTransitionActive(true);
+    },100);
+  }
 
   return (
       <header className={styles.container}>
-        <motion.div
-          animate={{ y: menuActive ? 130 : 0, opacity: menuActive ? 1 : 0 }}
-          initial={{ y: menuActive ? 0 : 130, opacity: menuActive ? 0 : 1 }}
-          className={styles.options}
-        >
-          <Link
-            href="/#home"
-            onClick={() => {
-              setActive(0);
-              setMenuActive(false);
-            }}
+        {
+          menuActive ? 
+          <motion.div
+            animate={{ y: transitionActive ? 128 : 0, opacity: transitionActive ? 1 : 0 }}
+            initial={{ y: transitionActive ? 0 : 128, opacity: transitionActive ? 0 : 1 }}
+            className={styles.options}
           >
-            <h3 className={styles[active === 0 ? "active" : "inactive"]}>
-              Home
-            </h3>
-          </Link>
-
-          <Link
-            href="/#about"
-            onClick={() => {
-              setActive(1);
-              setMenuActive(false);
-            }}
-          >
-            <h3 className={styles[active === 1 ? "active" : "inactive"]}>
-              About
-            </h3>
-          </Link>
-
-          <Link
-            href="/#blog"
-            onClick={() => {
-              setActive(2);
-              setMenuActive(false);
-            }}
-          >
-            <h3 className={styles[active === 2 ? "active" : "inactive"]}>
-              Blog
-            </h3>
-          </Link>
-
-          <Link
-            href="/#contact"
-            onClick={() => {
-              setActive(3);
-              setMenuActive(false);
-            }}
-          >
-            <h3 className={styles[active === 3 ? "active" : "inactive"]}>
-              Contact Me
-            </h3>
-          </Link>
-        </motion.div>
+            <Link
+              href="/#home"
+              onClick={() => {
+                setActive(0);
+                setMenuStateActive(false);
+              }}
+            >
+              <h3 className={styles[active === 0 ? "active" : "inactive"]}>
+                Home
+              </h3>
+            </Link>
+  
+            <Link
+              href="/#about"
+              onClick={() => {
+                setActive(1);
+                setMenuStateActive(false);
+              }}
+            >
+              <h3 className={styles[active === 1 ? "active" : "inactive"]}>
+                About
+              </h3>
+            </Link>
+  
+            <Link
+              href="/#blog"
+              onClick={() => {
+                setActive(2);
+                setMenuStateActive(false);
+              }}
+            >
+              <h3 className={styles[active === 2 ? "active" : "inactive"]}>
+                Blog
+              </h3>
+            </Link>
+  
+            <Link
+              href="/#contact"
+              onClick={() => {
+                setActive(3);
+                setMenuStateActive(false);
+              }}
+            >
+              <h3 className={styles[active === 3 ? "active" : "inactive"]}>
+                Contact Me
+              </h3>
+            </Link>
+          </motion.div> : null
+        }
         <div className={styles.header}>
           <div className={styles.left}>
             <h2>Portfolio</h2>
@@ -77,11 +89,11 @@ function Header() {
             <BurgerMenu
               className={styles.menu}
               onClick={() => {
-                setMenuActive((state) => !state);
+                setMenuStateActive(!menuActive);
               }}
             />
           </div>
-          <div className={styles.right}>
+          <nav className={styles.right}>
             <Link
               href="/#home"
               onClick={() => {
@@ -125,7 +137,7 @@ function Header() {
                 <h3>Contact Me</h3>
               </Link>
             </Button>
-          </div>
+          </nav>
         </div>
       </header>
   );

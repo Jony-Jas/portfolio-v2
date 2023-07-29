@@ -3,9 +3,13 @@ import { useEffect, useState } from "react";
 import styles from "./splash.module.css";
 import Image from "next/image";
 
-function SplashScreen() {
-  const [loading, setLoading] = useState(true);
-
+function SplashScreen({
+  loadingState: loading,
+  setLoadingState: setLoading,
+}: {
+  loadingState: boolean;
+  setLoadingState: (state: boolean) => void;
+}) {
   useEffect(() => {
     const splashLoader = setTimeout(() => {
       setLoading(false);
