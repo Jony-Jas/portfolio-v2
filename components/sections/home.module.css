@@ -1,8 +1,139 @@
-.container{
-    width: 100%;
-    height: 100vh;
-    background: var(--bg-section-1);
-    scroll-snap-align: start;
-
+.container {
+  width: 100%;
+  height: 100vh;
+  background: var(--bg-section-1);
+  scroll-snap-align: start;
+  padding-top: 115px;
   margin-bottom: 1px;
+  overflow-y: scroll;
+}
+
+.innerContainer {
+  display: flex;
+  padding-left: 10%;
+  padding-right: 8%;
+}
+
+.leftContainer,
+.rightContainer {
+  width: 50%;
+}
+
+.leftContainer {
+  padding: 2rem 3em;
+  display: flex;
+  flex-direction: column;
+}
+
+.leftContainer > h1 {
+  font-family: var(--font-gumela);
+  font-size: 3rem;
+  letter-spacing: 3px;
+}
+.leftContainer > h3 {
+  font-family: var(--font-roboto);
+  font-style: italic;
+  letter-spacing: 5px;
+  margin-bottom: 2rem;
+}
+.content {
+  font-family: var(--font-roboto);
+  font-weight: bold;
+  word-spacing: 2px;
+  line-height: 1.5rem;
+  margin-bottom: 2rem;
+}
+.buttonContainer > * {
+  color: var(--white-color);
+}
+.button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.rectangle {
+  width: 100%;
+  background: linear-gradient(
+    -267.67987684905deg,
+    var(--bg-section-1) 25%,
+    rgba(239, 183, 145, 255) 80%,
+    rgba(210, 171, 241, 255) 115%
+  );
+}
+
+.rectangleInnerContainer {
+  display: flex;
+  padding-left: 10%;
+  padding-right: 8%;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.socialContainer,
+.quotesContainer {
+  width: 50%;
+}
+
+.socialContainer {
+  display: flex;
+  align-items: center;
+  padding-left: 3rem;
+}
+
+.socialIcon {
+  border-radius: 50%;
+  padding: 2px;
+  width: fit-content;
+  margin-right: 1.5rem;
+}
+
+.quotesContainer {
+  font-size: 1.5rem;
+  font-family: var(--font-roboto);
+  text-align: end;
+  font-style: italic;
+}
+
+@media only screen and (max-width: 767px) {
+  .container {
+    padding-top: 65px;
+  }
+  .innerContainer {
+    flex-direction: column;
+    padding-left: 5px;
+  }
+  .leftContainer,
+  .rightContainer {
+    width: 100%;
+  }
+  .leftContainer{
+    padding: 2rem 1em;
+  }
+  .rectangleInnerContainer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .socialContainer {
+    padding: 0;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 5px;
+  }
+  .socialIcon {
+    margin: 1rem;
+  }
+  .quotesContainer {
+    text-align: center;
+    width: 100%;
+  }
+  .rectangleInnerContainer {
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    margin-bottom: 3rem;
+  }
+  .leftContainer > h1 {
+    font-size: 2.5rem;
+  }
 }

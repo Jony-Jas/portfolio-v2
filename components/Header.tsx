@@ -48,11 +48,11 @@ function Header() {
       {menuActive ? (
         <motion.div
           animate={{
-            y: transitionActive ? 128 : 0,
+            y: transitionActive ? 120 : 0,
             opacity: transitionActive ? 1 : 0,
           }}
           initial={{
-            y: transitionActive ? 0 : 128,
+            y: transitionActive ? 0 : 120,
             opacity: transitionActive ? 0 : 1,
           }}
           className={styles.options}
@@ -143,14 +143,16 @@ function Header() {
             ) : null}
           </Link>
 
-          <Button>
-            <Link href="/#contact">
-              <h3>Contact Me</h3>
-              {active == 3 ? (
-              <motion.hr animate={{ x: 0 }} initial={{ x: position[2] }} />
-            ) : null}
-            </Link>
-          </Button>
+          <div style={{ marginLeft: "3rem" }}>
+            <Button>
+              <Link href="/#contact">
+                <h3>Contact Me</h3>
+                {active == 3 ? (
+                  <motion.hr animate={{ x: 0 }} initial={{ x: position[2] }} />
+                ) : null}
+              </Link>
+            </Button>
+          </div>
         </nav>
       </div>
     </header>
