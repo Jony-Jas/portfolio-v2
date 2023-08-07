@@ -1,11 +1,13 @@
 "use client";
 import styles from "./home.module.css";
+import styles2 from "./homeRight.module.css";
 import { useRef, useEffect } from "react";
 import { useIsInViewport } from "@/utils/inViewPort";
 import { useAppStore } from "@/store/appStore";
 import Button from "../Button";
 import Image from "next/image";
 import { SocialIcon } from "react-social-icons";
+import { motion } from "framer-motion";
 
 function HomeSection() {
   const ref = useRef(null);
@@ -41,13 +43,118 @@ function HomeSection() {
             <div className={styles.buttonContainer}>
               <Button>
                 <div className={styles.button}>
-                  <Image src="/cv.svg" alt="Logo" width={25} height={25} />
+                  <Image src="/cv.svg" alt="cv" width={25} height={25} />
                   <h3>Resume</h3>
                 </div>
               </Button>
             </div>
           </div>
-          <div className={styles.rightContainer}></div>
+          <div className={styles2.rightContainer}>
+            <div className={styles2.rightInnerContainer}>
+              <div className={styles2.rectangle}>
+                <Image
+                  className={styles2.profileImg}
+                  src="/home/rectangle.png"
+                  alt="jony jas"
+                  width={400}
+                  height={400}
+                />
+                <motion.div
+                  style={{
+                    position: "absolute",
+                    right: "100%",
+                    bottom: "80%",
+                  }}
+                  animate={{ x: 0, transition: { duration: 0.5 } }}
+                  initial={{ x: -25 }}
+                >
+                  <Image
+                    src="/home/cool.png"
+                    alt="cool-icon"
+                    width={60}
+                    height={60}
+                    style={{
+                      width: "4vw",
+                      height: "4vw",
+                      maxHeight: "75px",
+                      maxWidth: "75px",
+                      minHeight: "45px",
+                      minWidth: "45px",
+                    }}
+                    className="coolIcon"
+                  />
+                </motion.div>
+                <motion.div
+                  style={{ position: "absolute", top: "-1vw", right: "-15%" }}
+                  animate={{ x: 0, transition: { duration: 0.5 } }}
+                  initial={{ x: 25 }}
+                >
+                  <Image
+                    src="/home/web.png"
+                    alt="web-icon"
+                    width={180}
+                    height={70}
+                    style={{
+                      width: "12vw",
+                      height: "5vw",
+                      maxHeight: "75px",
+                      maxWidth: "180px",
+                      minHeight: "45px",
+                      minWidth: "110px",
+                    }}
+                  />
+                </motion.div>
+                <motion.div
+                  style={{ position: "absolute", right: "80%", top: "80%" }}
+                  animate={{ x: 0, transition: { duration: 0.5 } }}
+                  initial={{ x: -25 }}
+                >
+                  <Image
+                    src="/home/ui.png"
+                    alt="ui-icon"
+                    width={180}
+                    height={70}
+                    style={{
+                      width: "12vw",
+                      height: "5vw",
+                      maxHeight: "75px",
+                      maxWidth: "180px",
+                      minHeight: "45px",
+                      minWidth: "110px",
+                    }}
+                  />
+                </motion.div>
+                <motion.div
+                  style={{ position: "absolute", right: "0%", top: "85%",zIndex:1 }}
+                  animate={{ x: 0, transition: { duration: 0.5 } }}
+                  initial={{ x: 25 }}
+                >
+                  <Image
+                    src="/home/android.png"
+                    alt="android-icon"
+                    width={70}
+                    height={100}
+                    style={{
+                      width: "9vw",
+                      height: "12vw",
+                      maxHeight: "100px",
+                      maxWidth: "70px",
+                      minHeight: "85px",
+                      minWidth: "60px",
+                    }}
+                  />
+                </motion.div>
+              </div>
+              <div className={styles2.circle}>
+                <Image
+                  src="/home/jony.png"
+                  alt="jony jas"
+                  width={300}
+                  height={300}
+                />
+              </div>
+            </div>
+          </div>
         </div>
         <div className={styles.rectangle}>
           <div className={styles.rectangleInnerContainer}>
