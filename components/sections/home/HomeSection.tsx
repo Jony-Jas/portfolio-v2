@@ -4,7 +4,7 @@ import styles2 from "./homeRight.module.css";
 import { useRef, useEffect } from "react";
 import { useIsInViewport } from "@/utils/inViewPort";
 import { useAppStore } from "@/store/appStore";
-import Button from "../Button";
+import Button from "../../Button";
 import Image from "next/image";
 import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";

@@ -4,7 +4,7 @@ import styles from "./page.module.css";
 import { useState } from "react";
 
 import SplashScreen from "@/components/SplashScreen";
-import HomeSection from "@/components/sections/HomeSection";
+import HomeSection from "@/components/sections/home/HomeSection";
 import BlogSection from "@/components/sections/BlogSection";
 import ContactSection from "@/components/sections/ContactSection";
 

@@ -60,12 +60,13 @@
   }
   .rightInnerContainer {
     bottom: 20px;
+    left: 10px;
   }
-  .rectangle{
+  .rectangle {
     min-height: 250px;
     min-width: 250px;
   }
-  .circle{
+  .circle {
     min-height: 200px;
     min-width: 200px;
   }
