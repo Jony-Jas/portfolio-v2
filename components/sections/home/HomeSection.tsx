@@ -33,12 +33,12 @@ function HomeSection() {
               scale. Dedicated to building a better future through technology
               while enhancing personal development. 📈
               <br />
-              <br />
+              {/* <br />
               🎓 Currently a final-year undergrad, I possess a burning passion
               for software development, web, mobile development, and blockchain.
               I firmly believe in the power of curiosity, and I revel in
               exploring novel tech stacks to bring forth creative and innovative
-              projects 💡
+              projects 💡 */}
             </div>
             <div className={styles.buttonContainer}>
               <Button>
@@ -65,8 +65,8 @@ function HomeSection() {
                     right: "100%",
                     bottom: "80%",
                   }}
-                  animate={{ x: 0, transition: { duration: 0.5 } }}
-                  initial={{ x: -25 }}
+                  animate={{ x: 0, transition: { duration: 0.8 } }}
+                  initial={{ x: -35 }}
                 >
                   <Image
                     src="/home/cool.png"
@@ -86,8 +86,8 @@ function HomeSection() {
                 </motion.div>
                 <motion.div
                   style={{ position: "absolute", top: "-1vw", right: "-15%" }}
-                  animate={{ x: 0, transition: { duration: 0.5 } }}
-                  initial={{ x: 25 }}
+                  animate={{ x: 0, transition: { duration: 0.8 } }}
+                  initial={{ x: 35 }}
                 >
                   <Image
                     src="/home/web.png"
@@ -106,8 +106,8 @@ function HomeSection() {
                 </motion.div>
                 <motion.div
                   style={{ position: "absolute", right: "80%", top: "80%" }}
-                  animate={{ x: 0, transition: { duration: 0.5 } }}
-                  initial={{ x: -25 }}
+                  animate={{ x: 0, transition: { duration: 0.8 } }}
+                  initial={{ x: -35 }}
                 >
                   <Image
                     src="/home/ui.png"
@@ -125,9 +125,14 @@ function HomeSection() {
                   />
                 </motion.div>
                 <motion.div
-                  style={{ position: "absolute", right: "0%", top: "85%",zIndex:1 }}
-                  animate={{ x: 0, transition: { duration: 0.5 } }}
-                  initial={{ x: 25 }}
+                  style={{
+                    position: "absolute",
+                    right: "0%",
+                    top: "85%",
+                    zIndex: 1,
+                  }}
+                  animate={{ x: 0, transition: { duration: 0.8 } }}
+                  initial={{ x: 35 }}
                 >
                   <Image
                     src="/home/android.png"

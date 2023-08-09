@@ -3,9 +3,12 @@
   height: 100vh;
   background: var(--bg-section-1);
   scroll-snap-align: start;
-  padding-top: 115px;
+  padding-top: 10%;
   margin-bottom: 1px;
   overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .innerContainer {
