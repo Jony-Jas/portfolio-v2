@@ -5,7 +5,7 @@
   scroll-snap-align: start;
   padding-top: 10%;
   margin-bottom: 1px;
-  overflow-y: scroll;
+  overflow-y: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
