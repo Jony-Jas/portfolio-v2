@@ -4,11 +4,14 @@ import { useRef, useEffect } from "react";
 import { useIsInViewport } from "@/utils/inViewPort";
 import { useAppStore } from "@/store/appStore";
 import Image from "next/image";
+import { motion } from "framer-motion";
+import { useInView, useAnimation } from "framer-motion";
 
 function AboutSection() {
   const ref = useRef(null);
   const isInViewport = useIsInViewport(ref);
   const { setPage } = useAppStore();
+  const isInView = useInView(ref, { once: false });
 
   useEffect(() => {
     if (isInViewport) {
@@ -48,41 +51,63 @@ function AboutSection() {
                 className={styles2.inCircle}
                 style={{ width: "60%", height: "60%" }}
               ></div>
-              <div
+              <motion.div
+                animate={isInView ? { opacity: 1 } : { opacity: 0.3 }}
+                transition={{ duration: 0.5, delay: 0.5 }}
                 style={{ left: "20%", top: "5%" }}
                 className={styles2.circleElement}
               >
                 <Image alt="" src="/about/java.png" width={30} height={35} />
-              </div>
+              </motion.div>
 
-              <div style={{ left: 0 }} className={styles2.circleElement}>
-                <Image alt="" src="/about/java.png" width={30} height={35} />
-              </div>
+              <motion.div
+                animate={isInView ? { opacity: 1 } : { opacity: 0.3 }}
+                transition={{ duration: 0.5, delay: 0.5 }}
+                style={{ left: 0 }}
+                className={styles2.circleElement}
+              >
+                <Image alt="" src="/about/c.png" width={35} height={35} />
+              </motion.div>
 
-              <div
+              <motion.div
+                animate={isInView ? { opacity: 1 } : { opacity: 0.3 }}
+                transition={{ duration: 0.5, delay: 0.5 }}
                 style={{ right: "20%", bottom: "5%" }}
                 className={styles2.circleElement}
               >
-                <Image alt="" src="/about/java.png" width={30} height={35} />
-              </div>
-              <div style={{ right: 10 }} className={styles2.circleElement}>
-                <Image alt="" src="/about/java.png" width={30} height={35} />
-              </div>
-              <div
+                <Image alt="" src="/about/atom.png" width={35} height={35} />
+              </motion.div>
+              <motion.div
+                animate={isInView ? { opacity: 1 } : { opacity: 0.3 }}
+                transition={{ duration: 0.5, delay: 0.5 }}
+                style={{ right: 10 }}
+                className={styles2.circleElement}
+              >
+                <Image alt="" src="/about/js.png" width={35} height={35} />
+              </motion.div>
+              <motion.div
+                animate={isInView ? { opacity: 1 } : { opacity: 0.3 }}
+                transition={{ duration: 0.5, delay: 0.5 }}
                 style={{ top: "5%", right: "20%" }}
                 className={styles2.circleElement}
               >
-                <Image alt="" src="/about/java.png" width={30} height={35} />
-              </div>
-              <div
+                <Image alt="" src="/about/nodejs.png" width={35} height={35} />
+              </motion.div>
+              <motion.div
+                animate={isInView ? { opacity: 1 } : { opacity: 0.3 }}
+                transition={{ duration: 0.5, delay: 0.5 }}
                 style={{ bottom: "5%", left: "20%" }}
                 className={styles2.circleElement}
               >
-                <Image alt="" src="/about/java.png" width={30} height={35} />
-              </div>
-              <div className={styles2.circleElement}>
-                <Image alt="" src="/about/java.png" width={30} height={35} />
-              </div>
+                <Image alt="" src="/about/xd.png" width={35} height={35} />
+              </motion.div>
+              <motion.div
+                animate={isInView ? { opacity: 1 } : { opacity: 0.3 }}
+                transition={{ duration: 0.5, delay: 0.5 }}
+                className={styles2.circleElement}
+              >
+                <Image alt="" src="/about/coding.png" width={35} height={35} />
+              </motion.div>
             </div>
           </div>
         </div>
