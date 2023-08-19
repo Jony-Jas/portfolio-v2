@@ -6,7 +6,7 @@ import SplashScreen from "@/components/SplashScreen";
 import Header from "@/components/Header";
 import AboutSection from "@/components/sections/about/AboutSection";
 import HomeSection from "@/components/sections/home/HomeSection";
-import BlogSection from "@/components/sections/BlogSection";
+import BlogSection from "@/components/sections/blog/BlogSection";
 import ContactSection from "@/components/sections/ContactSection";
 
 export default function Home() {

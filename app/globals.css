@@ -62,3 +62,8 @@ body {
 a {
   text-decoration: none;
 }
+
+.swiper-3d .swiper-slide-shadow-right, .swiper-3d .swiper-slide-shadow-left{
+  border-radius: 20px;
+  background-image: none !important;
+}
