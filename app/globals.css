@@ -29,6 +29,9 @@
     width: 45px !important;
     height: 45px !important;
   }
+  .swiper{
+    padding-bottom: 60px !important;
+  }
 }
 
 [data-theme="dark"] body {
@@ -66,4 +69,8 @@ a {
 .swiper-3d .swiper-slide-shadow-right, .swiper-3d .swiper-slide-shadow-left{
   border-radius: 20px;
   background-image: none !important;
+}
+
+.swiper-pagination-bullet-active{
+  background-color: var(--orange-color) !important;
 }

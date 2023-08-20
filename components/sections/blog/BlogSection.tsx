@@ -27,12 +27,13 @@ function BlogSection() {
 
   return (
     <section className={styles.container} id="blog" ref={ref}>
-      <div className={styles.inContainer}>
-        <div className={styles.header}>
-          <h1>Blog</h1>
-          <h1>Posts</h1>
-        </div>
+      <div className={styles.header}>
+        <h1>Blog</h1>
+        <h1>Posts</h1>
+      </div>
+      <div className={styles.swipeContainer}>
         <Swiper
+          initialSlide={1}
           effect={"coverflow"}
           grabCursor={true}
           centeredSlides={true}
@@ -47,47 +48,53 @@ function BlogSection() {
           pagination={true}
           modules={[EffectCoverflow, Pagination]}
           className="mySwiper"
-          style={{ paddingBottom: 30 }}
+          style={{ paddingBottom: 70 }}
         >
-          <SwiperSlide style={{ width: "30%", display:"flex", justifyContent:"center", borderRadius:"50%" }}>
+          <SwiperSlide
+            style={{
+              width: "30%",
+              display: "flex",
+              justifyContent: "center",
+              borderRadius: "50%",
+            }}
+          >
             <div className={styles.box}>
               <div style={{ display: "flex", justifyContent: "center" }}>
-                <Image
-                  alt=""
-                  src="/blog/js-banner.png"
-                  width={350}
-                  height={455}
-                />
+                <Image alt="" src="/blog/react.png" width={300} height={400} />
                 <div className={styles.inbox}>
                   <h2>Mastering Javascript</h2>
                 </div>
               </div>
             </div>
           </SwiperSlide>
-          <SwiperSlide style={{ width: "30%", display:"flex", justifyContent:"center", borderRadius:"50%" }}>
+          <SwiperSlide
+            style={{
+              width: "30%",
+              display: "flex",
+              justifyContent: "center",
+              borderRadius: "50%",
+            }}
+          >
             <div className={styles.box}>
               <div style={{ display: "flex", justifyContent: "center" }}>
-                <Image
-                  alt=""
-                  src="/blog/next.png"
-                  width={300}
-                  height={400}
-                />
+                <Image alt="" src="/blog/next.png" width={300} height={400} />
                 <div className={styles.inbox}>
                   <h2>Mastering Javascript</h2>
                 </div>
               </div>
             </div>
           </SwiperSlide>
-          <SwiperSlide style={{ width: "30%", display:"flex", justifyContent:"center", borderRadius:"50%" }}>
+          <SwiperSlide
+            style={{
+              width: "30%",
+              display: "flex",
+              justifyContent: "center",
+              borderRadius: "50%",
+            }}
+          >
             <div className={styles.box}>
               <div style={{ display: "flex", justifyContent: "center" }}>
-                <Image
-                  alt=""
-                  src="/blog/js-banner.png"
-                  width={350}
-                  height={455}
-                />
+                <Image alt="" src="/blog/react.png" width={300} height={400} />
                 <div className={styles.inbox}>
                   <h2>Mastering Javascript</h2>
                 </div>
