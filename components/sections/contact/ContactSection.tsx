@@ -45,16 +45,32 @@ function ContactSection() {
             <label className={styles.label} htmlFor="name">
               Name
             </label>
-            <Field name="name" placeholder="Full Name" />
+            <Field
+              className={styles.field}
+              name="name"
+              placeholder="Full Name"
+            />
             <label className={styles.label} htmlFor="email">
               Email
             </label>
-            <Field name="email" placeholder="Email" type="email" />
+            <Field
+              className={styles.field}
+              name="email"
+              placeholder="Email"
+              type="email"
+            />
             <label className={styles.label} htmlFor="message">
               Message
             </label>
-            <Field name="message" placeholder="Message" />
-            <button type="submit">Submit</button>
+            <Field
+              className={styles.fieldArea}
+              name="message"
+              placeholder="Message"
+              as={"textarea"}
+            />
+            <button className={styles.button} type="submit">
+              Submit
+            </button>
           </Form>
         </Formik>
       </div>

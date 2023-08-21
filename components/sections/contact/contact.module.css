@@ -34,6 +34,31 @@
   margin-bottom: 2rem;
 }
 
+.label {
+  display: block;
+  font-size: 1.5rem;
+  font-family: var(--font-roboto);
+  color: var(--text-primary);
+  font-weight: bold;
+}
+
+.field, .fieldArea {
+  height: 45px;
+  width: 80%;
+  margin-bottom: 1rem;
+  border: 3px solid #F8DFB0;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+.fieldArea {
+  height: 200px;
+}
+
+.button {
+  display: block;
+}
+
 @media only screen and (max-width: 979px) {
   .container {
     flex-direction: column;
