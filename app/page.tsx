@@ -7,7 +7,7 @@ import Header from "@/components/Header";
 import AboutSection from "@/components/sections/about/AboutSection";
 import HomeSection from "@/components/sections/home/HomeSection";
 import BlogSection from "@/components/sections/blog/BlogSection";
-import ContactSection from "@/components/sections/ContactSection";
+import ContactSection from "@/components/sections/contact/ContactSection";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
