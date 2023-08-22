@@ -1,0 +1,12 @@
+.container {
+  height: 100px;
+  /* background-color: red; */
+  position: absolute;
+  bottom: -80px;
+  left: 0;
+  width: 100%;
+}
+
+.container img {
+    width: 100%;
+}

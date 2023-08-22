@@ -4,7 +4,7 @@ import { useIsInViewport } from "@/utils/inViewPort";
 import { useAppStore } from "@/store/appStore";
 import Image from "next/image";
 import { Formik, Field, Form } from "formik";
-import Button from "@/components/Button";
+import Footer from "@/components/Footer";
 
 function ContactSection() {
   const ref = useRef(null);
@@ -66,6 +66,7 @@ function ContactSection() {
           </Form>
         </Formik>
       </div>
+      <Footer />
     </section>
   );
 }
