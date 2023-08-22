@@ -13,7 +13,7 @@
 
 .leftContainer,
 .rightContainer {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   width: 50%;
   height: 100%;
   padding: 50px;
@@ -40,13 +40,16 @@
   font-family: var(--font-roboto);
   color: var(--text-primary);
   font-weight: bold;
+  margin-left: 5px;
+  margin-bottom: 5px;
 }
 
-.field, .fieldArea {
+.field,
+.fieldArea {
   height: 45px;
   width: 80%;
   margin-bottom: 1rem;
-  border: 3px solid #F8DFB0;
+  border: 3px solid #f8dfb0;
   padding: 0.5rem;
   border-radius: 10px;
 }
@@ -55,8 +58,25 @@
   height: 200px;
 }
 
-.button {
-  display: block;
+.buttonDiv {
+  width: 80%;
+}
+
+.buttonDiv > button {
+  margin-right: 15px;
+  float: right;
+  position: relative;
+  bottom: 60px;
+
+  font-size: 0.9rem;
+  font-weight: bold;
+  font-family: var(--font-roboto);
+  color: var(--white-color);
+
+  padding: 0.5rem 0.5rem;
+  background-color: var(--orange-color);
+  border: none;
+  border-radius: 5px;
 }
 
 @media only screen and (max-width: 979px) {
@@ -77,6 +97,10 @@
   .leftContainer img {
     display: none;
   }
+
+  .buttonDiv > button {
+    bottom: 55px;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -84,5 +108,8 @@
     padding-top: 65px;
     padding-left: 5px;
     padding-right: 5px;
+  }
+  .buttonDiv > button {
+    bottom: 45px;
   }
 }

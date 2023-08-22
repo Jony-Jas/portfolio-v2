@@ -4,6 +4,7 @@ import { useIsInViewport } from "@/utils/inViewPort";
 import { useAppStore } from "@/store/appStore";
 import Image from "next/image";
 import { Formik, Field, Form } from "formik";
+import Button from "@/components/Button";
 
 function ContactSection() {
   const ref = useRef(null);
@@ -41,7 +42,7 @@ function ContactSection() {
             actions.resetForm();
           }}
         >
-          <Form>
+          <Form style={{marginTop:"1.5rem"}}>
             <label className={styles.label} htmlFor="name">
               Name
             </label>
@@ -68,9 +69,9 @@ function ContactSection() {
               placeholder="Message"
               as={"textarea"}
             />
-            <button className={styles.button} type="submit">
-              Submit
-            </button>
+            <div className={styles.buttonDiv}>
+                <button type="submit">Submit</button>
+            </div>
           </Form>
         </Formik>
       </div>
