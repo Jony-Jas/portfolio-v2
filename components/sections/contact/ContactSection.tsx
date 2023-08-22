@@ -42,35 +42,26 @@ function ContactSection() {
             actions.resetForm();
           }}
         >
-          <Form style={{marginTop:"1.5rem"}}>
-            <label className={styles.label} htmlFor="name">
-              Name
-            </label>
-            <Field
-              className={styles.field}
-              name="name"
-              placeholder="Full Name"
-            />
-            <label className={styles.label} htmlFor="email">
-              Email
-            </label>
-            <Field
-              className={styles.field}
-              name="email"
-              placeholder="Email"
-              type="email"
-            />
-            <label className={styles.label} htmlFor="message">
-              Message
-            </label>
-            <Field
-              className={styles.fieldArea}
-              name="message"
-              placeholder="Message"
-              as={"textarea"}
-            />
+          <Form>
+            <div className={styles.inputField}>
+              <Field className={styles.field} name="name" required />
+              <label htmlFor="name">Name</label>
+            </div>
+            <div className={styles.inputField}>
+              <Field className={styles.field} name="email" required />
+              <label htmlFor="email">Email</label>
+            </div>
+            <div className={styles.inputAreaField}>
+              <Field
+                className={styles.fieldArea}
+                name="message"
+                required
+                as={"textarea"}
+              />
+              <label htmlFor="message">Message</label>
+            </div>
             <div className={styles.buttonDiv}>
-                <button type="submit">Submit</button>
+              <button type="submit">Submit</button>
             </div>
           </Form>
         </Formik>

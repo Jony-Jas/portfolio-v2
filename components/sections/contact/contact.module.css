@@ -34,28 +34,19 @@
   margin-bottom: 2rem;
 }
 
-.label {
-  display: block;
-  font-size: 1.5rem;
-  font-family: var(--font-roboto);
-  color: var(--text-primary);
-  font-weight: bold;
-  margin-left: 5px;
-  margin-bottom: 5px;
-}
-
 .field,
 .fieldArea {
   height: 45px;
   width: 80%;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   border: 3px solid #f8dfb0;
-  padding: 0.5rem;
+  padding: 0rem 0.7rem;
   border-radius: 10px;
 }
 
 .fieldArea {
   height: 200px;
+  padding: 0.7rem 0.7rem;
 }
 
 .buttonDiv {
@@ -66,7 +57,7 @@
   margin-right: 15px;
   float: right;
   position: relative;
-  bottom: 60px;
+  bottom: 80px;
 
   font-size: 0.9rem;
   font-weight: bold;
@@ -77,6 +68,58 @@
   background-color: var(--orange-color);
   border: none;
   border-radius: 5px;
+}
+
+.inputField,
+.inputAreaField {
+  position: relative;
+}
+
+.inputField input,
+.inputAreaField textarea {
+  background: transparent;
+}
+
+.inputField label {
+  display: block;
+  font-size: 1.3rem;
+  padding: 0px 5px;
+  font-family: var(--font-roboto);
+  color: var(--text-primary);
+  font-weight: bold;
+  position: absolute;
+  top: 30%;
+  left: 10px;
+  transform: translateY(-50%);
+  transition: 0.3s;
+}
+
+.inputAreaField label {
+  display: block;
+  font-size: 1.3rem;
+  padding: 0px 5px;
+  font-family: var(--font-roboto);
+  color: var(--text-primary);
+  font-weight: bold;
+  position: absolute;
+  top: 10%;
+  left: 10px;
+  transform: translateY(-50%);
+  transition: 0.3s;
+}
+
+.inputField input:focus ~ label,
+.inputField input:valid ~ label,
+.inputAreaField textarea:focus ~ label,
+.inputAreaField textarea:valid ~ label {
+  top: 0;
+  left: 15px;
+  background: var(--bg-main);
+  font-size: 1rem;
+}
+
+.rightContainer form {
+  margin-top: 100px;
 }
 
 @media only screen and (max-width: 979px) {
@@ -99,7 +142,11 @@
   }
 
   .buttonDiv > button {
-    bottom: 55px;
+    bottom: 75px;
+  }
+
+  .rightContainer form {
+    margin-top: 10px;
   }
 }
 
@@ -110,6 +157,12 @@
     padding-right: 5px;
   }
   .buttonDiv > button {
-    bottom: 45px;
+    bottom: 65px;
+    padding: 0.7rem 0.7rem;
+  }
+  .field,
+  .fieldArea,
+  .buttonDiv {
+    width: 100%;
   }
 }
