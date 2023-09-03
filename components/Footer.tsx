@@ -14,9 +14,27 @@ function Footer() {
       <div className={styles.content}>
         Made with ❤️ Jony Jas
         <div className={styles.socialIcon}>
-          <SocialIcon url="https://jaketrent.com" network="linkedin" fgColor="white" bgColor="rgb(250, 142, 68)" />
-          <SocialIcon url="https://jaketrent.com" network="instagram" fgColor="white" bgColor="rgb(250, 142, 68)" />
-          <SocialIcon url="https://jaketrent.com" network="github" fgColor="white" bgColor="rgb(250, 142, 68)" />
+          <SocialIcon
+            url="https://www.linkedin.com/in/jony-jas/"
+            network="linkedin"
+            fgColor="white"
+            bgColor="rgb(250, 142, 68)"
+            target="blank"
+          />
+          <SocialIcon
+            url="https://instagram.com/_jony.j"
+            network="instagram"
+            fgColor="white"
+            bgColor="rgb(250, 142, 68)"
+            target="blank"
+          />
+          <SocialIcon
+            url="https://github.com/Jony-Jas"
+            network="github"
+            fgColor="white"
+            bgColor="rgb(250, 142, 68)"
+            target="blank"
+          />
         </div>
       </div>
     </div>

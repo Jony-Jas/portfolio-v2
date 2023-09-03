@@ -165,16 +165,39 @@ function HomeSection() {
           <div className={styles.rectangleInnerContainer}>
             <div className={styles.socialContainer}>
               <div className={styles.socialIcon}>
-                <SocialIcon url="https://jaketrent.com" network="instagram" />
+                <SocialIcon
+                  url="https://instagram.com/_jony.j"
+                  network="instagram"
+                  target="blank"
+                />
               </div>
               <div className={styles.socialIcon}>
-                <SocialIcon url="https://jaketrent.com" network="linkedin" />
+                <SocialIcon
+                  url="https://www.linkedin.com/in/jony-jas/"
+                  network="linkedin"
+                  target="blank"
+                />
               </div>
               <div className={styles.socialIcon}>
-                <SocialIcon url="https://jaketrent.com" network="github" />
+                <SocialIcon
+                  url="https://github.com/Jony-Jas"
+                  network="github"
+                  target="blank"
+                />
               </div>
               <div className={styles.socialIcon}>
-                <SocialIcon url="https://jaketrent.com" network="behance" />
+                <SocialIcon
+                  url="https://x.com/_jonyj"
+                  network="twitter"
+                  target="blank"
+                />
+              </div>
+              <div className={styles.socialIcon}>
+                <SocialIcon
+                  url="https://www.behance.net/jonyjas"
+                  network="behance"
+                  target="blank"
+                />
               </div>
             </div>
             <div className={styles.quotesContainer}>
