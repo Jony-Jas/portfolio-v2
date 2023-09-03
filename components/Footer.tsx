@@ -1,10 +1,9 @@
 import styles from "./footer.module.css";
-import Image from "next/image";
+import { SocialIcon } from "react-social-icons";
 
 function Footer() {
   return (
     <div className={styles.container}>
-      {/* <Image alt="" src="/wave.png" width={100} height={150} /> */}
       <svg xmlns="http://www.w3.org/2000/svg" width={1920.5} height={280.884}>
         <path
           fill="#fa8e44"
@@ -12,7 +11,14 @@ function Footer() {
           data-name="Subtraction 17"
         />
       </svg>
-      <div className={styles.content}>Made with ❤️ Jony Jas</div>
+      <div className={styles.content}>
+        Made with ❤️ Jony Jas
+        <div className={styles.socialIcon}>
+          <SocialIcon url="https://jaketrent.com" network="linkedin" fgColor="white" bgColor="rgb(250, 142, 68)" />
+          <SocialIcon url="https://jaketrent.com" network="instagram" fgColor="white" bgColor="rgb(250, 142, 68)" />
+          <SocialIcon url="https://jaketrent.com" network="github" fgColor="white" bgColor="rgb(250, 142, 68)" />
+        </div>
+      </div>
     </div>
   );
 }
