@@ -13,3 +13,9 @@ export const gumela = localFont({
   display: "swap",
   variable: "--font-gumela",
 });
+
+export const yellowtail = localFont({
+  src: "/fonts/yellowtail.otf",
+  display: "swap",
+  variable: "--font-yellowtail",
+});

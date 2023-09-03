@@ -1,5 +1,5 @@
 import "./globals.css";
-import { roboto, gumela } from "@/utils/fonts";
+import { roboto, gumela, yellowtail } from "@/utils/fonts";
 import type { Metadata } from "next";
 
 import Providers from "@/components/Providers";
@@ -16,11 +16,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${roboto.variable} ${gumela.variable}`}>
+    <html
+      lang="en"
+      className={`${roboto.variable} ${gumela.variable} ${yellowtail.variable}`}
+    >
       <body>
-        <Providers>
-          {children}
-        </Providers>
+        <Providers>{children}</Providers>
       </body>
     </html>
   );

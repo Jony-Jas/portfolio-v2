@@ -1,12 +1,28 @@
 .container {
-  height: 100px;
-  /* background-color: red; */
+  display: flex;
   position: absolute;
-  bottom: -80px;
+  bottom: -10rem;
   left: 0;
   width: 100%;
 }
 
-.container img {
+.container svg {
     width: 100%;
+    height: 15rem;
+}
+
+.content{
+  position: absolute;
+  width: 100%;
+  transform: translateY(450%);
+  font-size: 1.5rem;
+  font-family: var(--font-yellowtail);
+  text-align: center;
+  color: white;
+}
+
+@media only screen and (max-width: 767px) {
+  .container{
+    bottom: 0;
+  }
 }
