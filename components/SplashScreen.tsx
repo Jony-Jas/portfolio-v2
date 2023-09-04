@@ -27,7 +27,8 @@ function SplashScreen({
 
   return (
     <div className={styles.container}>
-      <Image src="/next.svg" alt="Logo" width={200} height={200} />
+      <Image src="/logo.svg" alt="Logo" width={100} height={100} />
+      <h2>Getting things ready ...</h2>
     </div>
   );
 }

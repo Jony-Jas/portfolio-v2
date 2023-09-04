@@ -62,7 +62,15 @@ function BlogSection() {
               <div style={{ display: "flex", justifyContent: "center" }}>
                 <Image alt="" src="/blog/react.png" width={300} height={400} />
                 <div className={styles.inbox}>
-                  <h2>Mastering Javascript</h2>
+                  <h2>
+                    <a
+                      style={{ color: "inherit" }}
+                      href="https://blog.jonyjas.com/"
+                      target="_blank"
+                    >
+                      Detect Shake Events in React Native
+                    </a>
+                  </h2>
                 </div>
               </div>
             </div>
@@ -79,7 +87,15 @@ function BlogSection() {
               <div style={{ display: "flex", justifyContent: "center" }}>
                 <Image alt="" src="/blog/next.png" width={300} height={400} />
                 <div className={styles.inbox}>
-                  <h2>Mastering Javascript</h2>
+                <h2>
+                    <a
+                      style={{ color: "inherit" }}
+                      href="https://blog.jonyjas.com/"
+                      target="_blank"
+                    >
+                      Getting Started with NextJS
+                    </a>
+                  </h2>
                 </div>
               </div>
             </div>
@@ -94,9 +110,17 @@ function BlogSection() {
           >
             <div className={styles.box}>
               <div style={{ display: "flex", justifyContent: "center" }}>
-                <Image alt="" src="/blog/react.png" width={300} height={400} />
+                <Image alt="" src="/blog/js.png" width={300} height={400} />
                 <div className={styles.inbox}>
-                  <h2>Mastering Javascript</h2>
+                <h2>
+                    <a
+                      style={{ color: "inherit" }}
+                      href="https://blog.jonyjas.com/"
+                      target="_blank"
+                    >
+                      Mastering JavaScript
+                    </a>
+                  </h2>
                 </div>
               </div>
             </div>

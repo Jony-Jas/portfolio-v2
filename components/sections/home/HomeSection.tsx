@@ -41,12 +41,14 @@ function HomeSection() {
               projects 💡 */}
             </div>
             <div className={styles.buttonContainer}>
+              <a href="https://drive.google.com/drive/folders/1e0uszNDE9vHSzCMQF5WhrKQUZ-xdCrLA?usp=sharing" target="_blank">
               <Button>
                 <div className={styles.button}>
                   <Image src="/cv.svg" alt="cv" width={25} height={25} />
                   <h3>Resume</h3>
                 </div>
               </Button>
+              </a>
             </div>
           </div>
           <div className={styles2.rightContainer}>
