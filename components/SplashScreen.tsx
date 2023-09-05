@@ -2,6 +2,8 @@
 import { useEffect, useState } from "react";
 import styles from "./splash.module.css";
 import Image from "next/image";
+import Typewriter from "typewriter-effect";
+import { motion } from "framer-motion";
 
 function SplashScreen({
   loadingState: loading,
@@ -14,7 +16,7 @@ function SplashScreen({
     const splashLoader = setTimeout(() => {
       setLoading(false);
       console.log("Loaded");
-    }, 1500);
+    }, 9000);
 
     return () => {
       clearTimeout(splashLoader);
@@ -27,8 +29,24 @@ function SplashScreen({
 
   return (
     <div className={styles.container}>
-      <Image src="/logo.svg" alt="Logo" width={100} height={100} />
-      <h2>Getting things ready ...</h2>
+      <motion.div
+        animate={{ width: "100%", transition: { duration: 8 } }}
+        className={styles.line1}
+      ></motion.div>
+      <div className={styles.incontainer}>
+        <Image src="/logo.svg" alt="Logo" width={100} height={100} />
+        <Typewriter
+          options={{
+            strings: ["Loading ...", "Getting ready !!!"],
+            autoStart: true,
+            loop: true,
+          }}
+        />
+      </div>
+      <motion.div
+        animate={{ width: "100%", transition: { duration: 10 } }}
+        className={styles.line2}
+      ></motion.div>
     </div>
   );
 }

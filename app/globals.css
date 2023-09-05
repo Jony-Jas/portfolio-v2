@@ -25,11 +25,11 @@
   :root {
     font-size: 12px;
   }
-  .social-icon{
+  .social-icon {
     width: 45px !important;
     height: 45px !important;
   }
-  .swiper{
+  .swiper {
     padding-bottom: 60px !important;
   }
 }
@@ -66,11 +66,17 @@ a {
   text-decoration: none;
 }
 
-.swiper-3d .swiper-slide-shadow-right, .swiper-3d .swiper-slide-shadow-left{
+.Typewriter__wrapper,
+.Typewriter__cursor {
+  font-size: 1.5rem;
+}
+
+.swiper-3d .swiper-slide-shadow-right,
+.swiper-3d .swiper-slide-shadow-left {
   border-radius: 20px;
   background-image: none !important;
 }
 
-.swiper-pagination-bullet-active{
+.swiper-pagination-bullet-active {
   background-color: var(--orange-color) !important;
 }
