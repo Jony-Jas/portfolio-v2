@@ -5,6 +5,7 @@ import { useAppStore } from "@/store/appStore";
 import Image from "next/image";
 import { Formik, Field, Form } from "formik";
 import Footer from "@/components/Footer";
+import { Redirect } from "next";
 
 function ContactSection() {
   const ref = useRef(null);
@@ -37,9 +38,15 @@ function ContactSection() {
             message: "",
           }}
           onSubmit={async (values, actions) => {
-            await new Promise((r) => setTimeout(r, 500));
-            alert(JSON.stringify(values, null, 2));
-            actions.resetForm();
+            // await new Promise((r) => setTimeout(r, 500));
+            if (confirm("Are you sure you want to send this message?")) {
+              window.open(
+                `mailto:jonyjasjonyjas@gmail.com?subject=${
+                  values.name + " | " + values.message.substring(0, 10)
+                }&body=${values.message}`
+              );
+              actions.resetForm();
+            }
           }}
         >
           <Form>

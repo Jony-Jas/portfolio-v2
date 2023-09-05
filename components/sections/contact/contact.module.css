@@ -54,6 +54,10 @@
   width: 80%;
 }
 
+.buttonDiv button:hover{
+  cursor: pointer;
+}
+
 .buttonDiv > button {
   margin-right: 15px;
   float: right;
