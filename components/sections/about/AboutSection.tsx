@@ -25,16 +25,27 @@ function AboutSection() {
         <h1>What do I</h1>
         <h1>play with ....</h1>
         <div className={styles.content}>
-          🚀 Passionate "Web & App Developer" and enthusiastic engineer 🛠️,
-          constantly seeking opportunities to learn and grow, no matter the
-          scale. Dedicated to building a better future through technology while
-          enhancing personal development. 📈
-          <br />
-          <br />
           🎓 Currently a final-year undergrad, I possess a burning passion for
           software development, web, mobile development, and blockchain. I
           firmly believe in the power of curiosity, and I revel in exploring
           novel tech stacks to bring forth creative and innovative projects 💡
+          <br />
+          <br />
+          <h3>Languages:</h3>
+          <span>
+            &emsp;Java, JavaScript, TypeScript, C/C++, HTML, CSS, Python,
+            Solidity, MATLAB
+          </span>
+          <h3>Technologies:</h3>
+          &emsp;React, Redux, React Native, Git, Docker, Node.js, Mongo DB,
+          GraphQL, MySQL, Next js, JSP, Spring Boot, Adobe XD
+          <br />
+          <br />
+          <div className={styles.links}>
+            <a href="https://leetcode.com/jony-jas/" target="_blank">LeetCode</a>
+            <a href="https://auth.geeksforgeeks.org/user/jonyjasjonyjas" target="_blank">GeeksForGeeks</a>
+            <a href="https://www.codingninjas.com/studio/profile/219d3d2d-8d4d-47d4-b289-c65fcc1b22b3/" target="_blank">CodingNinjas</a>
+          </div>
         </div>
       </div>
       <div className={styles.rightContainer}>

@@ -1,6 +1,6 @@
 .container {
   display: flex;
-  position: absolute;
+  /* position: absolute; */
   bottom: -10rem;
   left: 0;
   width: 100%;

@@ -41,6 +41,15 @@
   margin-bottom: 2rem;
 }
 
+.content h3 {
+  text-decoration: underline;
+}
+
+.links > a {
+  color: var(--orange-color) !important;
+  margin: 5px;
+}
+
 @media only screen and (max-width: 767px) {
   .container {
     padding-top: 65px;
@@ -53,7 +62,7 @@
     width: 100%;
     padding: 1.5rem 1em;
   }
-  .rightContainer{
+  .rightContainer {
     margin-bottom: 50px;
   }
 }
