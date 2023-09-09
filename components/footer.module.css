@@ -1,14 +1,12 @@
 .container {
   display: flex;
-  /* position: absolute; */
-  bottom: -10rem;
   left: 0;
   width: 100%;
+  position: relative;
 }
 
 .container svg {
   width: 100%;
-  height: 15rem;
 }
 
 .content {
@@ -19,6 +17,7 @@
   font-family: var(--font-yellowtail);
   text-align: center;
   color: white;
+  top: 20px;
 }
 
 .socialIcon svg {
@@ -28,10 +27,12 @@
 }
 
 @media only screen and (max-width: 767px) {
-  .container {
-    bottom: 0;
-  }
   .content {
     transform: translateY(140%);
+  }
+
+  .container svg {
+    width: 100%;
+    height: 250px;
   }
 }

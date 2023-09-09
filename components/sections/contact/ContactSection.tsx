@@ -20,6 +20,7 @@ function ContactSection() {
 
   return (
     <section className={styles.container} id="contact" ref={ref}>
+      <div className={styles.incontainer}>
       <div className={styles.leftContainer}>
         <h1>Get in Touch</h1>
         <h1>Contact me</h1>
@@ -72,6 +73,7 @@ function ContactSection() {
             </div>
           </Form>
         </Formik>
+      </div>
       </div>
       <Footer />
     </section>

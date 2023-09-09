@@ -4,12 +4,15 @@
   background: transparent;
   scroll-snap-align: end;
   padding-top: 115px;
-  padding-left: 10%;
-  padding-right: 10%;
   margin-bottom: 1px;
   overflow-y: scroll;
-  display: flex;
   position: relative;
+}
+
+.incontainer {
+  padding-left: 10%;
+  padding-right: 10%;
+  display: flex;
 }
 
 .leftContainer,
@@ -54,7 +57,7 @@
   width: 80%;
 }
 
-.buttonDiv button:hover{
+.buttonDiv button:hover {
   cursor: pointer;
 }
 
@@ -128,7 +131,7 @@
 }
 
 @media only screen and (max-width: 979px) {
-  .container {
+  .incontainer {
     flex-direction: column;
   }
   .leftContainer,
@@ -158,6 +161,8 @@
 @media only screen and (max-width: 767px) {
   .container {
     padding-top: 65px;
+  }
+  .incontainer {
     padding-left: 5px;
     padding-right: 5px;
   }
