@@ -25,7 +25,7 @@ function ContactSection() {
         <h1>Get in Touch</h1>
         <h1>Contact me</h1>
         <Image
-          alt=""
+          alt="communication-png"
           src="/contact/communication.png"
           width={450}
           height={400}

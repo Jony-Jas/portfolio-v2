@@ -60,7 +60,7 @@ function BlogSection() {
           >
             <div className={styles.box}>
               <div style={{ display: "flex", justifyContent: "center" }}>
-                <Image alt="" src="/blog/react.png" width={300} height={400} />
+                <Image alt="react-poster" src="/blog/react.png" width={300} height={400} />
                 <div className={styles.inbox}>
                   <h2>
                     <a
@@ -85,7 +85,7 @@ function BlogSection() {
           >
             <div className={styles.box}>
               <div style={{ display: "flex", justifyContent: "center" }}>
-                <Image alt="" src="/blog/next.png" width={300} height={400} />
+                <Image alt="nextjs-poster" src="/blog/next.png" width={300} height={400} />
                 <div className={styles.inbox}>
                 <h2>
                     <a
@@ -110,7 +110,7 @@ function BlogSection() {
           >
             <div className={styles.box}>
               <div style={{ display: "flex", justifyContent: "center" }}>
-                <Image alt="" src="/blog/js.png" width={300} height={400} />
+                <Image alt="js-poster" src="/blog/js.png" width={300} height={400} />
                 <div className={styles.inbox}>
                 <h2>
                     <a

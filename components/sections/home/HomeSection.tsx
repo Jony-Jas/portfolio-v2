@@ -44,7 +44,7 @@ function HomeSection() {
               <a href="https://drive.google.com/drive/folders/1e0uszNDE9vHSzCMQF5WhrKQUZ-xdCrLA?usp=sharing" target="_blank">
               <Button>
                 <div className={styles.button}>
-                  <Image src="/cv.svg" alt="cv" width={25} height={25} />
+                  <Image src="/cv.svg" alt="cv-icon" width={25} height={25} />
                   <h3>Resume</h3>
                 </div>
               </Button>
@@ -57,7 +57,7 @@ function HomeSection() {
                 <Image
                   className={styles2.profileImg}
                   src="/home/rectangle.png"
-                  alt="jony jas"
+                  alt="jony jas profile"
                   width={400}
                   height={400}
                 />
@@ -155,7 +155,7 @@ function HomeSection() {
               <div className={styles2.circle}>
                 <Image
                   src="/home/jony.png"
-                  alt="jony jas"
+                  alt="jony jas profile"
                   width={300}
                   height={300}
                 />

@@ -34,7 +34,7 @@ function SplashScreen({
         className={styles.line1}
       ></motion.div>
       <div className={styles.incontainer}>
-        <Image src="/logo.svg" alt="Logo" width={100} height={100} />
+        <Image src="/logo.svg" alt="j-logo" width={100} height={100} />
         <Typewriter
           options={{
             strings: ["Loading ...", "Getting ready !!!"],

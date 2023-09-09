@@ -68,7 +68,7 @@ function AboutSection() {
                 style={{ left: "20%", top: "5%" }}
                 className={styles2.circleElement}
               >
-                <Image alt="" src="/about/java.png" width={30} height={35} />
+                <Image alt="java-icon" src="/about/java.png" width={30} height={35} />
               </motion.div>
 
               <motion.div
@@ -77,7 +77,7 @@ function AboutSection() {
                 style={{ left: 0 }}
                 className={styles2.circleElement}
               >
-                <Image alt="" src="/about/c.png" width={35} height={35} />
+                <Image alt="c-icon" src="/about/c.png" width={35} height={35} />
               </motion.div>
 
               <motion.div
@@ -86,7 +86,7 @@ function AboutSection() {
                 style={{ right: "20%", bottom: "5%" }}
                 className={styles2.circleElement}
               >
-                <Image alt="" src="/about/atom.png" width={35} height={35} />
+                <Image alt="react-icon" src="/about/atom.png" width={35} height={35} />
               </motion.div>
               <motion.div
                 animate={isInView ? { opacity: 1 } : { opacity: 0.3 }}
@@ -94,7 +94,7 @@ function AboutSection() {
                 style={{ right: 10 }}
                 className={styles2.circleElement}
               >
-                <Image alt="" src="/about/js.png" width={35} height={35} />
+                <Image alt="js-icon" src="/about/js.png" width={35} height={35} />
               </motion.div>
               <motion.div
                 animate={isInView ? { opacity: 1 } : { opacity: 0.3 }}
@@ -102,7 +102,7 @@ function AboutSection() {
                 style={{ top: "5%", right: "20%" }}
                 className={styles2.circleElement}
               >
-                <Image alt="" src="/about/nodejs.png" width={35} height={35} />
+                <Image alt="nodejs-icon" src="/about/nodejs.png" width={35} height={35} />
               </motion.div>
               <motion.div
                 animate={isInView ? { opacity: 1 } : { opacity: 0.3 }}
@@ -110,14 +110,14 @@ function AboutSection() {
                 style={{ bottom: "5%", left: "20%" }}
                 className={styles2.circleElement}
               >
-                <Image alt="" src="/about/xd.png" width={35} height={35} />
+                <Image alt="xd-icon" src="/about/xd.png" width={35} height={35} />
               </motion.div>
               <motion.div
                 animate={isInView ? { opacity: 1 } : { opacity: 0.3 }}
                 transition={{ duration: 0.5, delay: 0.5 }}
                 className={styles2.circleElement}
               >
-                <Image alt="" src="/about/coding.png" width={35} height={35} />
+                <Image alt="code-icon" src="/about/coding.png" width={35} height={35} />
               </motion.div>
             </div>
           </div>
