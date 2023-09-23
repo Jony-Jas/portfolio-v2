@@ -24,7 +24,7 @@
 .line2 {
   width: 0%;
   height: 5px;
-  background-color: red;
+  background-color: var(--orange-color);
   border-radius: 20px;
   align-self: flex-start;
 }

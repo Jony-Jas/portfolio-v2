@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 
 import Providers from "@/components/Providers";
 import SplashScreen from "@/components/SplashScreen";
+import Head from "next/head";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -20,6 +21,39 @@ export default function RootLayout({
       lang="en"
       className={`${roboto.variable} ${gumela.variable} ${yellowtail.variable}`}
     >
+      <head>
+        {/* <!-- Primary Meta Tags --> */}
+        <title>Jony Jas | Portfolio</title>
+        <meta name="title" content="Jony Jas | Portfolio" />
+        {/* <link rel="icon" href="/logo.ico" type="image/x-icon" sizes="any" /> */}
+        <meta
+          name="description"
+          content="🚀 Passionate 'Web &amp App Developer' and enthusiastic engineer 🛠️, constantly seeking opportunities to learn and grow, no matter the scale. Dedicated to building a better future through technology while enhancing personal development. 📈"
+        />
+
+        {/* <!-- Open Graph / Facebook --> */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://jonyjas.com/" />
+        <meta property="og:title" content="Jony Jas | Portfolio" />
+        <meta
+          property="og:description"
+          content="🚀 Passionate 'Web &amp App Developer' and enthusiastic engineer 🛠️, constantly seeking opportunities to learn and grow, no matter the scale. Dedicated to building a better future through technology while enhancing personal development. 📈"
+        />
+        <meta property="og:image" content="http://localhost:3000/logo.svg" />
+
+        {/* <!-- Twitter --> */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://jonyjas.com/" />
+        <meta property="twitter:title" content="Jony Jas | Portfolio" />
+        <meta
+          property="twitter:description"
+          content="🚀 Passionate 'Web &amp App Developer' and enthusiastic engineer 🛠️, constantly seeking opportunities to learn and grow, no matter the scale. Dedicated to building a better future through technology while enhancing personal development. 📈"
+        />
+        <meta
+          property="twitter:image"
+          content="http://localhost:3000/logo.svg"
+        />
+      </head>
       <body>
         <Providers>{children}</Providers>
       </body>

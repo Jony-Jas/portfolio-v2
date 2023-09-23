@@ -64,7 +64,7 @@ function AboutSection() {
               ></div>
               <motion.div
                 animate={isInView ? { opacity: 1 } : { opacity: 0.3 }}
-                transition={{ duration: 0.5, delay: 0.5 }}
+                transition={{ duration: 0.5, delay: 0.8 }}
                 style={{ left: "20%", top: "5%" }}
                 className={styles2.circleElement}
               >
@@ -73,7 +73,7 @@ function AboutSection() {
 
               <motion.div
                 animate={isInView ? { opacity: 1 } : { opacity: 0.3 }}
-                transition={{ duration: 0.5, delay: 0.5 }}
+                transition={{ duration: 0.5, delay: 0.8 }}
                 style={{ left: 0 }}
                 className={styles2.circleElement}
               >
@@ -82,7 +82,7 @@ function AboutSection() {
 
               <motion.div
                 animate={isInView ? { opacity: 1 } : { opacity: 0.3 }}
-                transition={{ duration: 0.5, delay: 0.5 }}
+                transition={{ duration: 0.5, delay: 0.8 }}
                 style={{ right: "20%", bottom: "5%" }}
                 className={styles2.circleElement}
               >
@@ -90,7 +90,7 @@ function AboutSection() {
               </motion.div>
               <motion.div
                 animate={isInView ? { opacity: 1 } : { opacity: 0.3 }}
-                transition={{ duration: 0.5, delay: 0.5 }}
+                transition={{ duration: 0.5, delay: 0.8 }}
                 style={{ right: 10 }}
                 className={styles2.circleElement}
               >
@@ -98,7 +98,7 @@ function AboutSection() {
               </motion.div>
               <motion.div
                 animate={isInView ? { opacity: 1 } : { opacity: 0.3 }}
-                transition={{ duration: 0.5, delay: 0.5 }}
+                transition={{ duration: 0.5, delay: 0.8 }}
                 style={{ top: "5%", right: "20%" }}
                 className={styles2.circleElement}
               >
@@ -106,7 +106,7 @@ function AboutSection() {
               </motion.div>
               <motion.div
                 animate={isInView ? { opacity: 1 } : { opacity: 0.3 }}
-                transition={{ duration: 0.5, delay: 0.5 }}
+                transition={{ duration: 0.5, delay: 0.8 }}
                 style={{ bottom: "5%", left: "20%" }}
                 className={styles2.circleElement}
               >
@@ -114,7 +114,7 @@ function AboutSection() {
               </motion.div>
               <motion.div
                 animate={isInView ? { opacity: 1 } : { opacity: 0.3 }}
-                transition={{ duration: 0.5, delay: 0.5 }}
+                transition={{ duration: 0.5, delay: 0.8 }}
                 className={styles2.circleElement}
               >
                 <Image alt="code-icon" src="/about/coding.png" width={35} height={35} />
