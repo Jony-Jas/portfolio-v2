@@ -42,9 +42,15 @@ function AboutSection() {
           <br />
           <br />
           <div className={styles.links}>
-            <a href="https://leetcode.com/jony-jas/" target="_blank">LeetCode</a>
-            <a href="https://auth.geeksforgeeks.org/user/jonyjasjonyjas" target="_blank">GeeksForGeeks</a>
-            <a href="https://www.codingninjas.com/studio/profile/219d3d2d-8d4d-47d4-b289-c65fcc1b22b3/" target="_blank">CodingNinjas</a>
+            <a href="https://leetcode.com/jony-jas/" target="_blank">LeetCode
+            <Image alt="redirect-icon" src="/about/redirect.png" width={12} height={12} style={{marginLeft:2}}/>
+            </a>
+            <a href="https://auth.geeksforgeeks.org/user/jonyjasjonyjas" target="_blank">GeeksForGeeks
+            <Image alt="redirect-icon" src="/about/redirect.png" width={12} height={12} style={{marginLeft:2}}/>
+            </a>
+            <a href="https://www.codingninjas.com/studio/profile/219d3d2d-8d4d-47d4-b289-c65fcc1b22b3/" target="_blank">CodingNinjas
+            <Image alt="redirect-icon" src="/about/redirect.png" width={12} height={12} style={{marginLeft:2}}/>
+            </a>
           </div>
         </div>
       </div>
