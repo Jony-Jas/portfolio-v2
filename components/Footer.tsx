@@ -36,6 +36,15 @@ function Footer() {
             target="blank"
           />
         </div>
+        <div style={{ fontSize: 10, fontFamily: "monospace" }}>
+          <a href="https://jony-jas.web.app/" target="_blank" style={{textDecoration:"underline"}}>
+            Version (v2)
+          </a>
+          {" "}|{" "}
+          <a href="https://jony-jas.web.app/" target="_blank">
+            Version (v1)
+          </a>
+        </div>
       </div>
     </div>
   );
